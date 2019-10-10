@@ -4,7 +4,7 @@
 
 # rtc2git
 
-A tool made for migrating code and code-history from an existing [RTC](https://jazz.net/products/rational-team-concert/) SCM repository into a Git repository
+This is my modifications of a tool made for migrating code and code-history from an existing [RTC](https://jazz.net/products/rational-team-concert/) SCM repository into a Git repository
 It uses the CLI of RTC to gather the required informations.
 
 ## Prerequirements
