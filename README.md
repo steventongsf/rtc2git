@@ -3,8 +3,7 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-orange.svg)](https://github.com/rtcTo/rtc2git/blob/develop/LICENSE)
 
 # rtc2git
-
-This is my modifications of a tool made for migrating code and code-history from an existing [RTC](https://jazz.net/products/rational-team-concert/) SCM repository into a Git repository
+These are my modifications of a tool made for migrating code and code-history from an existing [RTC](https://jazz.net/products/rational-team-concert/) SCM repository into a Git repository
 It uses the CLI of RTC to gather the required informations.
 
 ## Prerequirements
