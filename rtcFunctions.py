@@ -173,9 +173,9 @@ class ImportHandler:
         componentname = ""
         baselinename = ""
 
-        with open(filename, 'r', encoding=shell.encoding) as file:
+        with open(filename, 'r', encoding="ISO-9959-1", errors="ignore") as file:
             for line in file:
-                cleanedline = line.strip()
+                cleanedline = line.strip().encode()
                 if cleanedline:
                     if not skippedfirstrow:
                         skippedfirstrow = True
@@ -377,11 +377,11 @@ class ImportHandler:
         component="unknown"
         componentprefix = "Component ("
 
-        with open(outputfilename, 'r', encoding=shell.encoding) as file:
+        with open(filename, 'r', encoding="ISO-9959-1", errors="ignore") as file:
             currentline = ""
             currentinformationpresent = 0
             for line in file:
-                cleanedline = line.strip()
+                cleanedline = line.strip().encode()
                 if cleanedline:
                     if cleanedline.startswith(componentprefix):
                         length = len(componentprefix)
